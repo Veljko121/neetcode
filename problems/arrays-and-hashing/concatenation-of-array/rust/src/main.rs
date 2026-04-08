@@ -20,6 +20,6 @@ fn main() {
         println!("Actual results not equal with expected results.");
     }
     else {
-        println!("Result correct.");
+        println!("Results correct.");
     }
 }
