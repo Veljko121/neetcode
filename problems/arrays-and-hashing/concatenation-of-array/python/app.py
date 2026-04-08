@@ -1,22 +1,22 @@
 from typing import List
 
-def get_concatenation(nums: List[int]) -> List[int]:
+def getConcatenation(nums: List[int]) -> List[int]:
     ans = []
-    nums_size = len(nums)
-    for i in range(nums_size * 2):
-        ans.append(nums[i % nums_size])
+    numsSize = len(nums)
+    for i in range(numsSize * 2):
+        ans.append(nums[i % numsSize])
     return ans
 
 def main():
-    nums_1 = [1, 4, 1, 2]
-    nums_2 = [22, 21, 20, 1]
-    sol_nums_1 = [1, 4, 1, 2, 1, 4, 1, 2]
-    sol_nums_2 = [22, 21, 20, 1, 22, 21, 20, 1]
+    nums1 = [1, 4, 1, 2]
+    nums2 = [22, 21, 20, 1]
+    solNums1 = [1, 4, 1, 2, 1, 4, 1, 2]
+    solNums2 = [22, 21, 20, 1, 22, 21, 20, 1]
 
-    res_1 = get_concatenation(nums_1)
-    res_2 = get_concatenation(nums_2)
+    res1 = getConcatenation(nums1)
+    res2 = getConcatenation(nums2)
 
-    if res_1 != sol_nums_1 or res_2 != sol_nums_2:
+    if res1 != solNums1 or res2 != solNums2:
         print("Actual results not equal with expected results.")
     else:
         print("Results correct.")
