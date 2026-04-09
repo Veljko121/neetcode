@@ -21,8 +21,8 @@ int main() {
     vector<int> nums_1 = {1, 2, 3, 3};
     vector<int> nums_2 = {1, 2, 3, 4};
 
-    auto res_1 = hasDuplicate(nums_1);
-    auto res_2 = hasDuplicate(nums_2);
+    bool res_1 = hasDuplicate(nums_1);
+    bool res_2 = hasDuplicate(nums_2);
 
     if (res_1 != true && res_2 != false) {
         cout << "Actual results not equal with expected results." << endl;

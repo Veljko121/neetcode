@@ -18,8 +18,8 @@ int main() {
     vector<int> sol_nums_1 = {1, 4, 1, 2, 1, 4, 1, 2};
     vector<int> sol_nums_2 = {22, 21, 20, 1, 22, 21, 20, 1};
 
-    auto res_1 = getConcatenation(nums_1);
-    auto res_2 = getConcatenation(nums_2);
+    vector<int> res_1 = getConcatenation(nums_1);
+    vector<int> res_2 = getConcatenation(nums_2);
 
     if (sol_nums_1 != res_1 || sol_nums_2 != res_2) {
         cout << "Actual results not equal with expected results." << endl;
