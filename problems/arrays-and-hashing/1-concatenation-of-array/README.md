@@ -30,4 +30,4 @@ Output: [22,21,20,1,22,21,20,1]
 Given an array `nums` of length `n`, the time complexity of the given solution is `O(2n)`, or `O(n)`, as every element is iterated over twice.
 
 ## Memory complexity
-Given an array `nums` of length `n`, the memory complexity of the given solution is `O(2n)`, or `O(n)`, as a helper list of size `n` is allocated.
+Given an array `nums` of length `n`, the memory complexity of the given solution is `O(2n)`, or `O(n)`, as a helper list of size `2n` is allocated.
