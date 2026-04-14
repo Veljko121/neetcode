@@ -4,9 +4,8 @@ from collections import defaultdict
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
     res = defaultdict(list)
 
-    numOfChars = ord("z") - ord("a") + 1
     for s in strs:
-        count = [0] * numOfChars
+        count = [0] * 26
 
         for c in s:
             count[ord(c) - ord("a")] += 1
