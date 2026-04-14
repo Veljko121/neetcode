@@ -26,8 +26,13 @@ Output: [22,21,20,1,22,21,20,1]
 - `1 <= nums.length <= 1000`
 - `1 <= nums[i] <= 1000`
 
-## Time complexity
-Given an array `nums` of length `n`, the time complexity of the given solution is `O(2n)`, or `O(n)`, as every element is iterated over twice.
+## Time and memory complexity
+- Assumptions:
+    - `nums` - array of integers
+    - `n = nums.length` - length of the array `nums`
 
-## Memory complexity
-Given an array `nums` of length `n`, the memory complexity of the given solution is `O(2n)`, or `O(n)`, as a helper list of size `2n` is allocated.
+- **Time complexity**: `O(n)`
+    - A more precise estimation is `O(2n)`, which approximates to `O(n)`. Each element has to be iterated over twice.
+
+- **Memory complexity**: `O(n)`
+    - More precisely, `O(2n)`, which approximates to `O(n)`. A helper HashMap of size `n` is being allocated.
