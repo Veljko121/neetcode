@@ -39,3 +39,11 @@ Output: [[""]]
 
 - **Memory complexity**: `O(n)`
     - A helper HashMap of size `n` is being allocated and also a helper list `count` of size `26`.
+
+## Alternative solutions
+
+### String sorting
+- **Time complexity**: `O(nlogn)`
+    - The algorithm is bottlenecked by the sorting algorithm.
+- **Memory complexity**: `O(n)`
+    - A helper HashMap of size `n` is being allocated.
