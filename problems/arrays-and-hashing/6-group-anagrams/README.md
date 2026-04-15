@@ -43,7 +43,11 @@ Output: [[""]]
 ## Alternative solutions
 
 ### String sorting
-- **Time complexity**: `O(nlogn)`
-    - The algorithm is bottlenecked by the sorting algorithm.
+- Assumptions:
+    - `strs` - array of strings
+    - `n` - average count of characters in a single string
+    - `m = strs.length` - strings count
+- **Time complexity**: `O(m * nlogn)`
+    - The algorithm is bottlenecked by the sorting algorithm. Each string has to be sorted.
 - **Memory complexity**: `O(n)`
     - A helper HashMap of size `n` is being allocated.
